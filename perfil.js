@@ -1,17 +1,17 @@
 
 document.getElementById("perfil-le").addEventListener("click", function() {
     window.location.href = "principal.html";
-    localStorage.setItem('imagemSelecionada', "/src/assets/le.jpeg");
+    localStorage.setItem('imagemSelecionada', "./src/assets/le.jpeg");
 });
 
 document.getElementById("perfil-ri").addEventListener("click", function() {
     window.location.href = "principal.html";
-    localStorage.setItem('imagemSelecionada', "/src/assets/ri.jpeg");
+    localStorage.setItem('imagemSelecionada', "./src/assets/ri.jpeg");
 });
 
 document.getElementById("perfil-ch").addEventListener("click", function() {
     window.location.href = "principal.html";
-    localStorage.setItem('imagemSelecionada', "/src/assets/ch.jpeg");
+    localStorage.setItem('imagemSelecionada', "./src/assets/ch.jpeg");
 });
 
 const perfil = document.getElementById("perfil");
