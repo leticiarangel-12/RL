@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+}
+
+p {
+    color: rgb(0, 120, 219);
+    text-align: left;
+    font-size: 3rem;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+h3 {
+    display: flex;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 60px;
+    justify-content: center;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
+
+figcaption{
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button{
+    background-color: black;
+    border-color: white;
+    color: white;
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 3em auto 0;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: rom;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil img{
+    cursor: pointer;
+    transition:
+    background-color 0.3s ease,
+    transform 0.1s ease,
+    box-shadow 0.3s ease;
+    height: 100%;
+    max-height: 230px;
+    max-width: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 2.3em;
+}
+
+figure{
+    margin-bottom: 5em;
+}
+
+.perfil img:hover{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+#popupGerenciar{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 30vw;
+  height: 70vh;
+  background: linear-gradient(to right, rgb(227, 234, 240), rgb(152, 204, 236));
+  display: flex;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 1.8rem;
+  flex-direction: column;
+  padding: 0 30px;
+  align-items: flex-start;
+  text-align: left;
+  display: none;
+}
+
+.popupGerenciar p{
+    color: black;
+    margin: 0;
+    font-weight: 0;
+    font-size: 1.5rem;
+}
+
+.popupGerenciar h3{
+    color: rgb(0, 120, 219);
+    margin: 0;
+    font-weight: 1;
+    margin-top: .8em;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: bold;
+}
+
+.popupGerenciar p, .popupGerenciar h3{
+    width: 100%;
+    text-align: left; 
+}
+
+.fechar{
+    margin-top: 3.8rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color:rgb(28, 67, 99);
+}
+
+.popupGerenciar button{
+    transition:
+    background-color 0.3s ease,
+    transform 0.1s ease,
+    box-shadow 0.3s ease;
+}
+
+.popupGerenciar button:hover{
+    box-shadow: 4px 4px 0 0  rgba(136, 165, 214, 0.8);
+    transform: translateY(-3px);
+}
+
+#perfil{
+    transition:
+    background-color 0.3s ease,
+    transform 0.1s ease,
+    box-shadow 0.3s ease;
+}
+
+#perfil:hover{
+    box-shadow: 2px 2px 0 0  rgba(174, 175, 176, 0.8);
+    transform: translateY(-3px);
+}
+
+#blurAg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(98, 171, 230, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: none;
+}

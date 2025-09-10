@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    transition: opacity 1s ease;
+    opacity: 1;
+}
+
+body.fade-out{
+    opacity: 0;
+}
+
+p{
+    color:rgb(0, 120, 219);
+    font-size: 15em;
+    text-align: center;
+}
